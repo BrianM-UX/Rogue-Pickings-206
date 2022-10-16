@@ -1,0 +1,181 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	padding: 0 1em;
+	font-size: 1em;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.container{
+	max-width: 1200px;
+  	width: 100%;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-flow: row wrap; 
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.875em;
+}
+
+h2 {
+	font-size: 1.125em;
+}
+
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+    padding: 0 1.875em;
+}
+
+/*The widths are in a percentage!*/
+header {
+	border-bottom: 0.188em solid #77a466;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+header h1 {
+	margin: 0;
+	padding: 2.375em 0;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 2.875em 0;
+}
+
+ul {
+	list-style: none;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 1.6em 1.6em;
+	justify-content: center;
+	width: 100%;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 0.188em solid #77a466;
+}
+
+.main-title h2 {
+	text-align: left;
+	padding: 0.313em 0;
+	color: #77a466;
+}
+
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.563em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-top: 0.063em solid #eee;
+}
+
+.section-one h3 {
+	padding: 0.625em 0;
+}
+
+.section-two {
+	border-left: 0.063em solid #eee;
+	border-right: 0.063em solid #eee;
+}
+
+.section-two h3,
+.section-three h3 {
+	padding: 0.625em 1.875em;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+
+.menu li {
+	padding: 0.625em 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.313em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.line {
+	padding: 0 45%;
+	border-bottom: 0.1875em solid #77a466;
+	width: 90%;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 0.188em solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
