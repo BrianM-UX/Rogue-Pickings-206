@@ -4,19 +4,17 @@ html {
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	display: flex;
 	font-size: 1em;
+	display:flex;
 	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
 }
 
 .container{
-	max-width: 1200px;
 	width: 90%;
   	display: flex;
   	justify-content: center;
-  	align-items: center;
-  	flex-flow: row wrap; 
+  	flex-flow: wrap; 
 }
 
 h1,
@@ -48,10 +46,10 @@ p {
 header {
 	border-bottom: 3px solid #77a466;
 	text-align: center;
-	width: 100%;
 	display: flex;
 	justify-content: center;
-	flex-flow: row wrap;
+	flex-flow: wrap;
+	width: 100%;
 }
 
 header h1 {
@@ -67,7 +65,6 @@ header h1 span {
 
 header nav {
 	padding: 2.875em 0;
-	width: 100%;
 }
 
 ul {
@@ -154,10 +151,6 @@ footer {
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
 }
 
 footer span {
@@ -170,33 +163,53 @@ footer span {
 @media all and (min-width:768px) {
     /* Tablet styles here */
 
-	bottom-section {
+	header nav ul{
 		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		flex-basis: 30%;
+		justify-content: center;
+		width: 100%;
 	}
-	
+
+	.bottom-section {
+		display: flex inline;
+		flex-flow: nowrap;
+		align-items: flex-start;
+	}
+@media all and (min-width:1024px) {
+	/* Tablet landscape */
+	header nav {
+		display: flex;
+		justify-content: unset;
+		align-items: center;
+
+	}
+}
  
 @media only screen and (min-width: 1200px) {
+
+
     header {
-        justify-content: space-between;
+		justify-content: space-between;
+		align-items: center;
     }
 
-    header h1 {
-        width: 30%;
-        padding: 0;
-        border-bottom: none;
-        text-align: left;
-    }
+	header h1 {
+		border: none;
+		width: 30%;
+    	padding: 0;
+    	text-align: left;
+	}
 
-    header nav {
-        width: 40%;
-    }
+	header nav {
+		width: 40%;
+		justify-content: center;
+	}
 
-    header nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
+	header nav ul {
+		justify-content: center;
+	}
+
+	header nav ul li {
+		padding: 0 0.5em;
+	}
 
 }
